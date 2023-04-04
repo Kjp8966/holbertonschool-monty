@@ -14,7 +14,7 @@ size_t i = 0;
 if (op_toks == NULL)
 return;
 for (i = 0; op_toks[i]; i++)
-ree(op_toks[i]);
+free(op_toks[i]);
 free(op_toks);
 }
 /**
